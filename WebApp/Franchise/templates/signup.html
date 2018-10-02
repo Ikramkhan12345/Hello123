@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block title %}
+            <title>QuickFix | Home</title>
+    {% endblock title %}
+{% block content %}
+  
+    {% include 'nav.html'%}
+<section class="engine"><a href="https://mobiri.se/s">bootstrap themes</a></section><section class="cid-r4XHjjgRUA mbr-fullscreen mbr-parallax-background" id="header15-i">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(7, 59, 76);"></div>
+
+    <div class="container align-right">
+<div class="row">
+    <div class="mbr-white col-lg-8 col-md-7 content-container">
+        <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">QUiCKFiX</h1>
+        <p class="mbr-text pb-3 mbr-fonts-style display-5"></p><p>&nbsp;<em>&nbsp; &nbsp;</em><br></p><p></p>
+    </div>
+    <div class="col-lg-4 col-md-5">
+        <br/><br/>
+    <div class="form-container">
+        <div class="media-container-column" data-form-type="formoid">
+            <h2 style="text-align:center;color:white">SignUp Form</h2><br/>
+            <form class="mbr-form" method="post" action="{% url  'signup'%}">
+                    {% csrf_token %}
+                <div data-for="firstname">
+                        <div class="form-group">
+                            <input type="text" class="form-control px-3" name="firstname" data-form-field="firstname" placeholder="First Name" required="" id="firstname-header15-i">
+                        </div>
+                </div>
+                <div data-for="lastname">
+                        <div class="form-group">
+                            <input type="text" class="form-control px-3" name="lastname" data-form-field="lastname" placeholder="Last Name" required="" id="lastname-header15-i">
+                        </div>
+                </div>
+                <div data-for="email">
+                    <div class="form-group">
+                        <input type="email" class="form-control px-3" name="email" data-form-field="Email" placeholder="Email" required="" id="email-header15-i">
+                    </div>
+                </div>
+                <div data-for="password">
+                    <div class="form-group">
+                        <input type="password" class="form-control px-3" name="password" data-form-field="password" placeholder="password" id="password-header15-i">
+                    </div>
+                </div>
+
+                <div data-for="confirm-password">
+                        <div class="form-group">
+                            <input type="password" class="form-control px-3" name="confirm-password" data-form-field="confirm-password" placeholder="Confirm Password" id="confirm-password-header15-i">
+                        </div>
+                    </div>
+                <div class="terms"></div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" required><a href="{% url 'home' %}" target="_blank" style="color:white">
+                                I have read and agree to the Terms and Conditions and Privacy Policy</a></label>
+                        </div>
+                </div>
+                <input type="hidden" name="lat" id="lat">
+                <input type="hidden" id="lang" name="lang">
+                <span class="input-group-btn">
+                    <button href="" type="submit" class="btn btn-secondary btn-form display-4">REGISTER</button>
+                </span>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
+
+<section class="features3 cid-r4XHyeYodE" id="features3-l">
+
+    
+
+    
+    <div class="container">
+        <div class="media-container-row">
+            <div class="card p-3 col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="{% static 'assets/images/01.jpg' %}" alt="Mobirise">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            No Coding
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.
+                        </p>
+                    </div>
+                    <div class="mbr-section-btn text-center">
+                        <a href="https://mobirise.com" class="btn btn-primary display-4">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="{% static 'assets/images/02.jpg' %}" alt="Mobirise">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Mobile Friendly
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            All sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site.
+                        </p>
+                    </div>
+                    <div class="mbr-section-btn text-center">
+                        <a href="https://mobirise.com" class="btn btn-primary display-4">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="{% static 'assets/images/03.jpg' %}" alt="Mobirise">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Unique Styles
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.
+                        </p>
+                    </div>
+                    <div class="mbr-section-btn text-center">
+                        <a href="https://mobirise.com" class="btn btn-primary display-4">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="{% static 'assets/images/01.jpg' %}" alt="Mobirise">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Unlimited Sites
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
+                        </p>
+                    </div>
+                    <div class="mbr-section-btn text-center">
+                        <a href="https://mobirise.com" class="btn btn-primary display-4">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+{% block footer %}
+ {% include 'footer.html' %}
+{% endblock footer %}   

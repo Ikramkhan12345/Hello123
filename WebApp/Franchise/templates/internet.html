@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0029)chrome-error://chromewebdata/ -->
+<html dir="ltr" lang="en" i18n-processed="">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="theme-color" content="#fff">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,
+         maximum-scale=1.0, user-scalable=no">
+      <title>QuickFix</title>
+      <link rel="stylesheet" href="{% static 'assets/css/internet.css' %}">
+   </head>
+   <body id="t" style="font-family: &#39;Segoe UI&#39;, Tahoma, sans-serif; font-size: 75%" jstcache="0" class="offline">
+   <div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
+   <div id="main-content" jstcache="0">
+   <div class="icon icon-offline" jseval="updateIconClass(this.classList, iconClass)" alt="" jstcache="1" style="visibility: hidden;"></div>
+   <div id="main-message" jstcache="0">
+        <h1 jsselect="heading" jsvalues=".innerHTML:msg" jstcache="5">QuickFix</h1>
+   <h1 jsselect="heading" jsvalues=".innerHTML:msg" jstcache="5">No internet</h1>
+   <p jsselect="summary" jsvalues=".innerHTML:msg" jstcache="2">No internet</p>
+   <div id="suggestions-list" style="" jsdisplay="(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)" jstcache="6">
+   <p jsvalues=".innerHTML:suggestionsSummaryListHeader" jstcache="13">Try:</p>
+   <ul jsvalues=".className:suggestionsSummaryList.length == 1 ? &#39;single-suggestion&#39; : &#39;&#39;" jstcache="14" class="">
+   <li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="15" jsinstance="0">Checking the network cables, modem, and router</li><li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="15" jsinstance="1">Reconnecting to Wi-Fi</li><li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="15" jsinstance="*2"><a href="javascript:diagnoseErrors()" id="diagnose-link" jstcache="0">Running Windows Network Diagnostics</a></li>
+   </ul>
+   </div>
+   <div class="error-code" jscontent="errorCode" jstcache="7">ERR_INTERNET_DISCONNECTED</div>
+   <div id="diagnose-frame" class="hidden" jstcache="0"></div>
+   </div>
+   </div>
+   </body>
+</html>
